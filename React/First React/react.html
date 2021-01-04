@@ -11,9 +11,18 @@
         <script crossorigin="" src="https://unpkg.com/react@16/umd/react.development.js"></script>
         <script crossorigin="" src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"></script> 
 
-        <script>
+        <script >
+            
             const App = React.createElement("h1", {}, "Our First React page has rendered");
             ReactDOM.render(App, document.getElementById("root"));
+
+//             const App = () => <h1>Our First React page has rendered</h1>;
+// // Notice The difference in syntax. Here we've created a React Functional Component, named App which looks 
+// // like regular HTML syntax
+// ReactDOM.render(<App></App>, document.getElementById("root"));
+
+
+
         </script>
     </body>
 </html>
