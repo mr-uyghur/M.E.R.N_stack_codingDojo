@@ -1,0 +1,8 @@
+npx create-react-app app-name
+------------------------------------
+
+to start server: npm run start
+----------------------------------------
+
+code for component files: import React, { Component } from 'react';
+-------------------------------------------
