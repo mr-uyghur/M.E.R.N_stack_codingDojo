@@ -1,6 +1,6 @@
 
 import './App.css';
-import Counter from './Counter'
+
 import UserForm from './UserForm'
 
 function App() {
