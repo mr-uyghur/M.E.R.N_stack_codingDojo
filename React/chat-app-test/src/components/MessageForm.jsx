@@ -3,14 +3,12 @@ import react, { useState } from 'react';
     
 const MessageForm = (props) => {
     const [msg, setMsg] = useState("");
+    const {onNewMessage} = props
 
-
-    
     const handleSubmit = (e) => {
         e.preventDefault();
-        props.onNewMessage( msg );
+        onNewMessage( msg );
     };
-    
     
     return (
         <form onSubmit={ handleSubmit }>
