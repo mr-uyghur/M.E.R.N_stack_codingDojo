@@ -15,7 +15,7 @@ const addColor = (color) =>{
         <div>
             <NewColor addColor = {addColor} />
             <hr/>
-            <Colors colors = {colors}/>
+          <span>  <Colors colors = {colors}/></span>
             
             </div>
     )

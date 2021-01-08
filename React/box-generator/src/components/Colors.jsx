@@ -8,7 +8,7 @@ const Colors = (props) => {
           {
               props.colors.map((val,index)=>
                 <div key = {index}>
-                    <Color color={val}/>
+                  <Color color={val}/> 
                     </div>
               )
           }
