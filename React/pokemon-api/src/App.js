@@ -1,5 +1,4 @@
 import Example from './components/Example'
-import {BrowserRouter, Route} from 'react-router-dom'
 import Display from './components/Display'
 import React,{ useState }  from 'react'
 import './App.css';
@@ -9,7 +8,8 @@ function App() {
   return (
     <div className="App">
      
-     <Display pokemon={ pokemon } setPokemon={ setPokemon }/>
+     {/* <Display pokemon={ pokemon } setPokemon={ setPokemon }/> */}
+     <Example pokemon={ pokemon } setPokemon={ setPokemon }/>
     </div>
   );
 }
