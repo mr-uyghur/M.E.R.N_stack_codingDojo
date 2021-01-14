@@ -12,7 +12,6 @@ const Search = props =>{
                         <option value = "people">People</option>
                             <option value = "films"> Films</option>
                             <option value = "starships">Starships</option>
-                            <option value = "vehicles">Vehicles</option>
                             <option value = "species">Species</option>
                             <option value = "planets">Planets</option>
                     </select>
