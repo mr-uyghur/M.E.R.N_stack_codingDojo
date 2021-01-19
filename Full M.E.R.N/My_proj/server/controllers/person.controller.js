@@ -34,3 +34,9 @@ module.exports.deletePerson = (request, response) => {
         .then(deleteConfirmation => response.json(deleteConfirmation))
         .catch(err => response.json(err))
 }
+
+module.exports.updatePerson = (request, response) => {
+    Person.findOneAndUpdate({_id: request.params.id}, request.body, {new:true})
+        .then(updatedPerson => response.json(updatedPerson))
+        .catch(err => response.json(err))
+}

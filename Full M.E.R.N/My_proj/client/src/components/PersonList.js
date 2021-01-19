@@ -14,7 +14,7 @@ export default props => {
         <div>
             {props.people.map((person, idx)=>{
                 return <p key={idx}>
-                    <Link to={"/people/" + person._id}>
+                    <Link to={"/product/" + person._id}>
                     {person.firstName}
                     </Link>
                    
