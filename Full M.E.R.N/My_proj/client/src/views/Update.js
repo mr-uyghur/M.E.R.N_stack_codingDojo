@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Router,Redirect,Link } from '@reach/router';
+import { Router,navigate } from '@reach/router';
 import { withRouter } from 'react-router';
 import axios from 'axios';
 export default props => {
@@ -23,7 +23,7 @@ export default props => {
             lastName,
             description
         })
-            .then(<Redirect to="/" />);
+            .then(navigate(`/product/${id}`));
     }
    
     return (

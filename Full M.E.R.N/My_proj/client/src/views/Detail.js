@@ -12,7 +12,7 @@ export default props => {
             <h1> {person.firstName}</h1>
             <p> {person.lastName}$</p>
             <p>{person.description}</p>
-            <Link to={"/people/" + person._id + "/edit"}>
+            <Link to={"/product/" + person._id + "/edit"}>
               <button>  Edit </button>
             </Link>
         </div>

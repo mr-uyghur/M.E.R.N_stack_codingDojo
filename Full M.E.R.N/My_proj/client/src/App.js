@@ -11,7 +11,7 @@ function App() {
       <Router>
       <Main path="/"/>
         <Detail path="product/:id" />
-        <Update path="people/:id/edit"/>
+        <Update path="product/:id/edit"/>
       </Router>
       </center>
     </div>
