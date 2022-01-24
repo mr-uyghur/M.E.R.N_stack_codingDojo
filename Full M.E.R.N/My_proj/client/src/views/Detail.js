@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { Router,Link } from '@reach/router';
 import axios from 'axios';
-export default props => {
+const Detail = props => {
     const [person, setPerson] = useState({})
     useEffect(() => {
         axios.get("http://localhost:8000/api/people/" + props.id)
@@ -19,3 +19,5 @@ export default props => {
 
     )
 }
+
+export default Detail

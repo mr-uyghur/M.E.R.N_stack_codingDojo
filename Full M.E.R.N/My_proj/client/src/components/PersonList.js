@@ -1,7 +1,7 @@
 import React from 'react'
 import axios from 'axios';
 import { Link } from '@reach/router';
-export default props => {
+const PersonList = props => {
     // delete functions
     const { removeFromDom } = props;
     const deletePerson = (personId) => {
@@ -17,7 +17,6 @@ export default props => {
                     <Link to={"/product/" + person._id}>
                     {person.firstName}
                     </Link>
-                   
                     <button onClick={(e)=>{deletePerson(person._id)}}>
                         Delete
                     </button>
@@ -29,3 +28,5 @@ export default props => {
 
     )
 }
+
+export default PersonList

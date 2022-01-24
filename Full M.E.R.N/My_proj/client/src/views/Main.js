@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios';
 import PersonForm from '../components/PersonForm';
 import PersonList from '../components/PersonList';
-export default () => {
+const Main = () => {
     const [people, setPeople] = useState([]);
     const [loaded, setLoaded] = useState(false);
     useEffect(()=>{
@@ -26,3 +26,5 @@ export default () => {
         </div>
     )
 }
+
+export default Main

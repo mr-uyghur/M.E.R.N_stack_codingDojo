@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Router,navigate } from '@reach/router';
 import { withRouter } from 'react-router';
 import axios from 'axios';
-export default props => {
+const Update = props => {
 
     const { id } = props;
     const [firstName, setFirstName] = useState('');
@@ -15,7 +15,7 @@ export default props => {
                 setLastName(res.data.lastName);
                 setDescription(res.data.description);
             })
-    }, [])
+    },[])
     const updatePerson = e => {
         e.preventDefault();
         axios.put('http://localhost:8000/api/people/' + id, {
@@ -58,3 +58,5 @@ export default props => {
         </div>
     )
 }
+
+export default Update
